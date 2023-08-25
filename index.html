@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet'>
+<link rel="stylesheet" href="/confetti.js">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+    
+    <div class="score">
+        <h1>The never lose game</h1>
+        <p>Total Score: <span id="totalScore">0</span></p>
+        <button id="rollButton">Roll Dice</button>
+        <button id="resetButton">Reset</button>
+        <p class="message" id="message"></p>
+    </div>
+    <div class="rolls">
+        <table>
+            <thead>
+                <tr>
+                    <th>Roll</th>
+                    <th>Score</th>
+                    <th>Total Score</th>
+                </tr>
+            </thead>
+            <tbody id="rollsTableBody"></tbody>
+        </table>
+    </div>
+    <div class="dice-container-wrapper" id="diceContainerWrapper"></div>
+    <script src="/script.js"></script>
+    <script rel="stylesheet" href="/confetti.js"></script>
+
+</body>
+</html>

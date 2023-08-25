@@ -1,0 +1,119 @@
+body {
+    font-family: 'Allan';font-size: 22px;
+    color: silver;
+    margin: 0;
+    padding: 0;
+    background: url('https://cdn.dribbble.com/users/241740/screenshots/3956081/icon_dices_anim.gif') center/cover no-repeat fixed;
+}
+
+.score {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#rollButton {
+    padding: 8px 16px;
+    background-color: #0479f7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#resetButton{
+    padding: 8px 16px;
+    background-color: #f70b0bbc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+
+.message {
+    color: #f2eeee91;
+    font-weight: bold;
+    display: none;
+}
+
+.rolls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.dice-container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.dice {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 32px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #333;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg);
+    animation: roll 1s ease-in-out;
+    position: relative;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+    100% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+}
+
+/* confetti.css */
+
+/* Style for a single confetti piece */
+.confetti {
+    position: fixed;
+    background-color: #ff0000; /* red color */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: confetti-fall 5s ease-out infinite;
+}
+
+/* Animation for the confetti falling */
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
